@@ -253,6 +253,14 @@ nav a {
 }
 
 /* MAIN */
+.relative {
+    position: relative;
+}
+
+
+main img {
+    object-fit: cover;
+}
 
 .card {
     margin: 10px;
@@ -291,4 +299,42 @@ label.discount {
 
 label.speciality {
     background-color: green;
+}
+
+.brand {
+    color: grey;
+    font-size: 1rem;
+}
+
+.product {
+    color: black;
+    font-size: 1rem;
+}
+
+.price {
+    color: red;
+    font-size: 1rem;
+}
+
+.price-deleted {
+    color: rgb(61, 61, 61);
+    text-decoration: line-through;
+    font-size: 1rem;
+}
+
+.item img {
+    position:relative
+
+}
+
+.item:hover {
+    border: 1px solid black;
+}
+
+.order1 {
+    order: 1;
+}
+
+.order0 {
+    order: 0;
 }
