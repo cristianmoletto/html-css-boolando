@@ -105,6 +105,10 @@ img {
     text-align: center;
 }
 
+.text-align-end {
+    text-align: end;
+}
+
 .shrink-1 {
     flex-shrink: 1;
 }
@@ -344,3 +348,22 @@ label.speciality {
     z-index: 1;
 }
 
+/* Footer */
+footer {
+    background-color: rgb(26,26,26);
+}
+
+footer a {
+    margin-right: 5px;
+    font-size: 0.8rem;
+}
+
+footer h3 {
+    font-size: 1rem;
+}
+
+.social {
+    width: 15px;
+    background-color: white;
+    border-radius: 2px;
+}
