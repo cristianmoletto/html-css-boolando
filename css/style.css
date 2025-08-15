@@ -137,6 +137,10 @@ margin-bottom: 10px;
     padding-top: 120px
 }
 
+.pt-30 {
+    padding-top: 30px
+}
+
 .py-10 {
 padding-top: 10px;
 padding-bottom: 10px;
@@ -231,6 +235,7 @@ a:hover {
 nav {
     width: 100%;
     position: fixed;
+    z-index: 99999;
     background-color: rgb(255,105,0);
     border-bottom: 2px solid lightgrey;
     top: 0; 
@@ -278,6 +283,7 @@ main img {
     right: 0%;
     top: 0%;
     transform: translateY(10px);
+    z-index: 3;
 }
 
 label {
@@ -289,8 +295,9 @@ label {
 
 .position-label {
     position: absolute;
-    bottom: 25%;
-    left: 0%
+    bottom: 20%;
+    left: 0%;
+    z-index: 3;
 }
 
 label.discount {
@@ -322,19 +329,18 @@ label.speciality {
     font-size: 1rem;
 }
 
-.item img {
-    position:relative
-
+.first-img {
+    z-index: 1;
 }
 
-.item:hover {
-    border: 1px solid black;
+.second-img {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: -1;
 }
 
-.order1 {
-    order: 1;
+.item:hover > .second-img {
+    z-index: 1;
 }
 
-.order0 {
-    order: 0;
-}
